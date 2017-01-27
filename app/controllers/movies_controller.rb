@@ -1,13 +1,25 @@
+
+
 class MoviesController < ApplicationController
+  before_action :set_movie, only: [:show, :edit, :update] # Executar o filtro antes da seleção
+  #after_action :set_movie, only: [:show, :edit, :update] # Executar o filtro depois da seleção
   def index
     @movies = Movie.all
   end
 
   def show
-    id = params['id']
-    @movie = Movie.find id
-  rescue ActiveRecord::RecordNotFound
-    render file: "#{Rails.root}/public/404.html", status: 404
+  end
+
+  def edit
+  end
+
+  def update
+    @movie.update(movie_params)
+    if @movie.save
+      redirect_to action: :show, id: @movie.id
+    else
+      render :edit, id: @movie.id
+    end
   end
 
   def new
@@ -23,39 +35,16 @@ class MoviesController < ApplicationController
     end
   end
 
-  def edit
-    id = params['id']
-    @movie = Movie.find(id)
-  rescue ActiveRecord::RecordNotFound
-    render file: "#{Rails.root}/public/404.html", status: 404
-  end
-
-  def update
-    id = params['id']
-    @movie = Movie.find(id)
-    @movie.update(movie_params)
-    if @movie.save
-      redirect_to action: :show, id: @movie.id
-    else
-      render :edit, id: @movie.id
-    end
-  rescue ActiveRecord::RecordNotFound
-    render file: "#{Rails.root}/public/404.html", status: 404
-  end
-  
-  def delete
-    id = params['id']
-    @movie = Movie.find(id)
-    if Movie.destroy @movie
-      redirect_to action: :index
-    end
-  rescue ActiveRecord::RecordNotFound
-    render file: "#{Rails.root}/public/404.html", status: 404
-  end
-
   private
 
   def movie_params
     params.require(:movie).permit(:title, :release_date, :description)
+  end
+
+  def set_movie
+    id = params['id']
+    @movie = Movie.find(id)
+  rescue ActiveRecord::RecordNotFound
+    render file: "#{Rails.root}/public/404.html", status: 404
   end
 end
