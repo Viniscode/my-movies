@@ -1,0 +1,32 @@
+<h1 class="title">Movies</h1>
+
+<table id="movies" border=1>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Release</th>
+      <th colspan=3 >Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @movies.each do |movie| %>
+      <tr>
+        <td><%= link_to(movie.title, "/movies/#{movie.id}")   %></td>
+        <td><%= movie.release_date %></td>
+        <td align="center"> <%= link_to('Edit', "/movies/#{movie.id}/edit") %> </td>
+        <td align="center"> <%= link_to('Destroy', "/movies/delet/#{movie.id}", method: :delete, data: { confirm: 'Você tem certeza que deseja excluir?' }) %> </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<table>
+  <thead>
+    <tbody>
+      <tr>
+        <td>
+          <td align="center"> <%= link_to('New', "/movies/new") %> </td>
+        </td>
+      </tr>
+    </tbody>
+  </thead>
+</table>
