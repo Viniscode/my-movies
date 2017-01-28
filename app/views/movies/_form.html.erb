@@ -1,3 +1,15 @@
+<% if @movie.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(@movie.errors.count, "error") %> prohibited this movie from being saved:</h2>
+ 
+    <ul>
+    <% @movie.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
+ 
 <%= form_for @movie, method: method, url: {controller: 'movies', action: action} do |f| %>
   <div class="field">
     <%= f.label :title %>
@@ -13,7 +25,7 @@
     <%= f.label :description %>
     <%= f.text_area :description %>
   </div>
-
+ 
   <div class="actions">
     <%= f.submit %>
   </div>

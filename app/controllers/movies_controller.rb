@@ -1,5 +1,3 @@
-
-
 class MoviesController < ApplicationController
   before_action :set_movie, only: [:show, :edit, :update] # Executar o filtro antes da seleção
   #after_action :set_movie, only: [:show, :edit, :update] # Executar o filtro depois da seleção

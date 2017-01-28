@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
   
+  resources :directors
+  resources :actors
+  resources :directors
+  resources :actors
   get 'movies' => "movies#index"
   get 'movies/new'
   get 'movies/:id' => "movies#show"
