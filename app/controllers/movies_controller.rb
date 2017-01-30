@@ -1,6 +1,7 @@
 class MoviesController < ApplicationController
   before_action :set_movie, only: [:show, :edit, :update] # Executar o filtro antes da seleção
   #after_action :set_movie, only: [:show, :edit, :update] # Executar o filtro depois da seleção
+  before_action  :authenticate_user!, except: [:index, :show]
   def index
     @movies = Movie.all
   end

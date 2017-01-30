@@ -6347,3 +6347,564 @@ Processing by MoviesController#index as HTML
   [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
   Rendered movies/index.html.erb within layouts/application (1.9ms)
 Completed 200 OK in 27ms (Views: 25.8ms | ActiveRecord: 0.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DeviseCreateUsers (20170130222419)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.3ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170130222419"]]
+  [1m[36m (12.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/" for 143.107.45.213 at 2017-01-30 22:25:40 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 339ms (Views: 316.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/sign_up" for 143.107.45.213 at 2017-01-30 22:26:20 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (8.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (82.4ms)
+Completed 200 OK in 156ms (Views: 137.5ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for 143.107.45.213 at 2017-01-30 22:26:33 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fj3t+eBbQ27BW9znoCmkdnQh2uxtT1u4TFhQBX08jKT4hKaDRjqi1S2nnaZofWVG9UubMlgvZk5Suh6IwTAU8g==", "user"=>{"email"=>"Viniciussk10@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'viniciussk10@gmail.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "viniciussk10@gmail.com"], ["encrypted_password", "$2a$11$KbUZGpabxxuP25VahB5wE.i4Dlw2za5ZA9OCbTHS0cWBPFeaQudwG"], ["created_at", "2017-01-30 22:26:34.052672"], ["updated_at", "2017-01-30 22:26:34.052672"]]
+  [1m[35m (9.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2017-01-30 22:26:34.064895"], ["current_sign_in_at", "2017-01-30 22:26:34.064895"], ["last_sign_in_ip", "143.107.45.213"], ["current_sign_in_ip", "143.107.45.213"], ["sign_in_count", 1], ["updated_at", "2017-01-30 22:26:34.065959"], ["id", 1]]
+  [1m[36m (8.4ms)[0m  [1mcommit transaction[0m
+Redirected to https://ruby-c9code.c9users.io/
+Completed 302 Found in 282ms (ActiveRecord: 19.1ms)
+
+
+Started GET "/" for 143.107.45.213 at 2017-01-30 22:26:34 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 27ms (Views: 26.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 143.107.45.213 at 2017-01-30 22:28:47 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 43ms (Views: 37.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/actors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 143.107.45.213 at 2017-01-30 22:28:47 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-25fe720eb68f3bca6b07f38308d164aba3894c921a35e886ed8cbc8145459848.css?body=1" for 143.107.45.213 at 2017-01-30 22:28:47 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/directors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 143.107.45.213 at 2017-01-30 22:28:47 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/peoples.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 143.107.45.213 at 2017-01-30 22:28:47 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/movies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 143.107.45.213 at 2017-01-30 22:28:47 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/movie.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 143.107.45.213 at 2017-01-30 22:28:47 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-ab14bc95f6ed051098061b5929ccdd8e7c71de1d1d106ae7b1c2c6b55c594635.css?body=1" for 143.107.45.213 at 2017-01-30 22:28:47 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 143.107.45.213 at 2017-01-30 22:28:47 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 143.107.45.213 at 2017-01-30 22:28:47 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/actors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 22:28:47 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 143.107.45.213 at 2017-01-30 22:28:47 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/directors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 22:28:47 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/movie.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 22:28:47 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/movies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 22:28:48 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/peoples.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 22:28:48 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 143.107.45.213 at 2017-01-30 22:28:48 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 143.107.45.213 at 2017-01-30 22:29:09 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 82ms (Views: 81.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies" for 143.107.45.213 at 2017-01-30 22:29:34 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 39ms (Views: 37.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies" for 143.107.45.213 at 2017-01-30 22:29:57 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 24ms (Views: 23.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/actors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 143.107.45.213 at 2017-01-30 22:29:57 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-25fe720eb68f3bca6b07f38308d164aba3894c921a35e886ed8cbc8145459848.css?body=1" for 143.107.45.213 at 2017-01-30 22:29:57 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 143.107.45.213 at 2017-01-30 22:29:57 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/movies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 143.107.45.213 at 2017-01-30 22:29:57 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/directors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 143.107.45.213 at 2017-01-30 22:29:57 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/movie.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 143.107.45.213 at 2017-01-30 22:29:57 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/peoples.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 143.107.45.213 at 2017-01-30 22:29:57 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-ab14bc95f6ed051098061b5929ccdd8e7c71de1d1d106ae7b1c2c6b55c594635.css?body=1" for 143.107.45.213 at 2017-01-30 22:29:57 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 143.107.45.213 at 2017-01-30 22:29:58 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 143.107.45.213 at 2017-01-30 22:29:58 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/directors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 22:29:58 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/movie.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 22:29:58 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/actors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 22:29:58 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/movies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 22:29:58 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 143.107.45.213 at 2017-01-30 22:29:58 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/peoples.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 22:29:58 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/actors" for 143.107.45.213 at 2017-01-30 22:30:02 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ActorsController#index as HTML
+  [1m[36mActor Load (0.2ms)[0m  [1mSELECT "professionals".* FROM "professionals" WHERE "professionals"."type" IN ('Actor')[0m
+  Rendered actors/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 38ms (Views: 32.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 143.107.45.213 at 2017-01-30 22:30:03 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies/5" for 143.107.45.213 at 2017-01-30 22:31:41 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered movies/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 143ms (Views: 34.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/new" for 143.107.45.213 at 2017-01-30 22:31:55 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#new as HTML
+Completed 401 Unauthorized in 9ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 143.107.45.213 at 2017-01-30 22:31:55 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (7.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (20.7ms)
+Completed 200 OK in 113ms (Views: 102.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users/sign_in" for 143.107.45.213 at 2017-01-30 22:32:10 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/X+klycDejOygSO0yOa6nItt3xVLZrnUDgShhX50iJmjXZHlWCSeVx1B3RVQQFuG4HhKXXGlRx+CBTxqwk58Vg==", "user"=>{"email"=>"viniciussk10@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "viniciussk10@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["current_sign_in_at", "2017-01-30 22:32:10.794025"], ["sign_in_count", 2], ["updated_at", "2017-01-30 22:32:10.795115"], ["id", 1]]
+  [1m[36m (9.8ms)[0m  [1mcommit transaction[0m
+Redirected to https://ruby-c9code.c9users.io/movies/new
+Completed 302 Found in 157ms (ActiveRecord: 10.5ms)
+
+
+Started GET "/movies/new" for 143.107.45.213 at 2017-01-30 22:32:11 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered movies/_form.html.erb (15.3ms)
+  Rendered movies/new.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 42ms (Views: 39.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/movies" for 143.107.45.213 at 2017-01-30 22:32:26 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wUoMJbQv9vQQXSIMOrDucCp/QXfwfEsMf/Fxq1ZM9bzffE5qIg8xKrcYSNNeVxOQPbYpg8SnViHYg1MfHAamAg==", "movie"=>{"title"=>"Vagner Barriga Verde", "release_date(3i)"=>"30", "release_date(2i)"=>"1", "release_date(1i)"=>"2017", "description"=>""}, "commit"=>"Create Movie"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies" WHERE ("movies"."title" = 'Vagner Barriga Verde' AND "movies"."release_date" = '2017-01-30 00:00:00.000000') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "movies" ("title", "description", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Vagner Barriga Verde"], ["description", ""], ["release_date", "2017-01-30 00:00:00.000000"], ["created_at", "2017-01-30 22:32:26.823752"], ["updated_at", "2017-01-30 22:32:26.823752"]]
+  [1m[36m (144.5ms)[0m  [1mcommit transaction[0m
+Redirected to https://ruby-c9code.c9users.io/movies/6
+Completed 302 Found in 152ms (ActiveRecord: 145.1ms)
+
+
+Started GET "/movies/6" for 143.107.45.213 at 2017-01-30 22:32:27 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered movies/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 143.107.45.213 at 2017-01-30 22:32:36 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies" for 143.107.45.213 at 2017-01-30 22:35:41 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (2.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 28ms (Views: 26.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/actors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 143.107.45.213 at 2017-01-30 22:35:41 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/directors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 143.107.45.213 at 2017-01-30 22:35:41 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/movie.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 143.107.45.213 at 2017-01-30 22:35:41 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-25fe720eb68f3bca6b07f38308d164aba3894c921a35e886ed8cbc8145459848.css?body=1" for 143.107.45.213 at 2017-01-30 22:35:41 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 143.107.45.213 at 2017-01-30 22:35:41 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 143.107.45.213 at 2017-01-30 22:35:41 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 143.107.45.213 at 2017-01-30 22:35:41 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/movies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 143.107.45.213 at 2017-01-30 22:35:41 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/peoples.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 143.107.45.213 at 2017-01-30 22:35:41 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-ab14bc95f6ed051098061b5929ccdd8e7c71de1d1d106ae7b1c2c6b55c594635.css?body=1" for 143.107.45.213 at 2017-01-30 22:35:41 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/actors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 22:35:42 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/movie.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 22:35:42 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/peoples.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 22:35:42 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/directors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 22:35:42 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/movies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 22:35:42 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 143.107.45.213 at 2017-01-30 22:35:42 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started DELETE "/users/sign_out" for 143.107.45.213 at 2017-01-30 22:35:57 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"0KFs2EGG51YJuQUjKB63kBHwRSw5YQWmdacy4vr3Mj9WGCei5+cG7eVFRGLgSnagkJoE8gwBOFBrRXxvRvuqaQ=="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to https://ruby-c9code.c9users.io/
+Completed 302 Found in 8ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 143.107.45.213 at 2017-01-30 22:35:57 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 29ms (Views: 27.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 143.107.45.213 at 2017-01-30 22:36:01 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/actors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 143.107.45.213 at 2017-01-30 22:36:01 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-25fe720eb68f3bca6b07f38308d164aba3894c921a35e886ed8cbc8145459848.css?body=1" for 143.107.45.213 at 2017-01-30 22:36:01 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/directors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 143.107.45.213 at 2017-01-30 22:36:02 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/movies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 143.107.45.213 at 2017-01-30 22:36:02 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/movie.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 143.107.45.213 at 2017-01-30 22:36:02 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/peoples.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 143.107.45.213 at 2017-01-30 22:36:02 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-ab14bc95f6ed051098061b5929ccdd8e7c71de1d1d106ae7b1c2c6b55c594635.css?body=1" for 143.107.45.213 at 2017-01-30 22:36:02 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 143.107.45.213 at 2017-01-30 22:36:02 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 143.107.45.213 at 2017-01-30 22:36:02 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 143.107.45.213 at 2017-01-30 22:36:02 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/actors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 22:36:02 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/directors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 22:36:02 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/movie.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 22:36:02 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/movies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 22:36:02 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/peoples.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 22:36:02 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 143.107.45.213 at 2017-01-30 22:36:02 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 143.107.45.213 at 2017-01-30 22:37:06 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (2.2ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 36ms (Views: 35.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/actors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 143.107.45.213 at 2017-01-30 22:37:06 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-25fe720eb68f3bca6b07f38308d164aba3894c921a35e886ed8cbc8145459848.css?body=1" for 143.107.45.213 at 2017-01-30 22:37:06 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/directors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 143.107.45.213 at 2017-01-30 22:37:06 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-ab14bc95f6ed051098061b5929ccdd8e7c71de1d1d106ae7b1c2c6b55c594635.css?body=1" for 143.107.45.213 at 2017-01-30 22:37:06 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/peoples.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 143.107.45.213 at 2017-01-30 22:37:06 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/movies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 143.107.45.213 at 2017-01-30 22:37:06 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/movie.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 143.107.45.213 at 2017-01-30 22:37:06 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 143.107.45.213 at 2017-01-30 22:37:06 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 143.107.45.213 at 2017-01-30 22:37:07 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 143.107.45.213 at 2017-01-30 22:37:07 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/actors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 22:37:07 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/directors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 22:37:07 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/movie.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 22:37:07 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/movies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 22:37:07 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/peoples.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 22:37:07 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 143.107.45.213 at 2017-01-30 22:37:07 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
