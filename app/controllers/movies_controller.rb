@@ -32,7 +32,13 @@ class MoviesController < ApplicationController
       render :new
     end
   end
-
+  
+  def delete 
+  @movie = params['id']
+    if Movie.destroy(@movie)
+    redirect_to action: :index 
+    end
+  end
   private
 
   def movie_params

@@ -5076,3 +5076,421 @@ Migrating to AddDirectorToMovies (20170127231800)
   [1m[36m (9.6ms)[0m  [1mcommit transaction[0m
   [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director_id" = ?  [["director_id", 5]]
   [1m[36mActor Load (0.3ms)[0m  [1mSELECT  "professionals".* FROM "professionals" WHERE "professionals"."type" IN ('Actor')  ORDER BY "professionals"."id" DESC LIMIT 1[0m
+
+
+Started GET "/" for 187.84.33.245 at 2017-01-28 15:08:25 +0000
+Cannot render console from 187.84.33.245! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (2.0ms)
+Completed 200 OK in 24ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 187.84.33.245 at 2017-01-28 15:08:48 +0000
+Cannot render console from 187.84.33.245! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 414ms (Views: 391.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-c9d1e2da5848020664ac30d3a2dbcaf4d9d2bb3439a4a6a7c8b7c11826031e52.css?body=1" for 187.84.33.245 at 2017-01-28 15:08:49 +0000
+Cannot render console from 187.84.33.245! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 187.84.33.245 at 2017-01-28 15:08:49 +0000
+Cannot render console from 187.84.33.245! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 187.84.33.245 at 2017-01-28 15:08:49 +0000
+Cannot render console from 187.84.33.245! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 187.84.33.245 at 2017-01-28 15:08:49 +0000
+Cannot render console from 187.84.33.245! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/actors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 187.84.33.245 at 2017-01-28 15:08:49 +0000
+Cannot render console from 187.84.33.245! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/directors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 187.84.33.245 at 2017-01-28 15:08:49 +0000
+Cannot render console from 187.84.33.245! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/movie.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 187.84.33.245 at 2017-01-28 15:08:49 +0000
+Cannot render console from 187.84.33.245! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/movies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 187.84.33.245 at 2017-01-28 15:08:49 +0000
+Cannot render console from 187.84.33.245! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/peoples.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 187.84.33.245 at 2017-01-28 15:08:49 +0000
+Cannot render console from 187.84.33.245! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 187.84.33.245 at 2017-01-28 15:08:49 +0000
+Cannot render console from 187.84.33.245! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/movies/4" for 187.84.33.245 at 2017-01-28 15:08:52 +0000
+Cannot render console from 187.84.33.245! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMovie Load (1.3ms)[0m  [1mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered movies/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 77ms (Views: 33.3ms | ActiveRecord: 1.3ms)
+
+
+Started DELETE "/movies/delet/5" for 187.84.33.245 at 2017-01-28 15:08:57 +0000
+Cannot render console from 187.84.33.245! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+AbstractController::ActionNotFound (The action 'delete' could not be found for MoviesController):
+  actionpack (4.2.5) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.5) lib/rack/etag.rb:24:in `call'
+  rack (1.6.5) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.5) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.6ms)
+
+
+Started GET "/movies" for 187.84.33.245 at 2017-01-28 15:12:35 +0000
+Cannot render console from 187.84.33.245! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 25ms (Views: 20.0ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/movies/delet/5" for 187.84.33.245 at 2017-01-28 15:12:39 +0000
+Cannot render console from 187.84.33.245! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#delete as HTML
+  Parameters: {"authenticity_token"=>"8L2oTowkUQALpU4Aal1BY10LHiMz1IYTxtV8BE5LddR0ex3zSV4nU1ZNP7cCDPTlyOZqMe5O7ujAF83FaPf3oQ==", "id"=>"5"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.4ms)
+
+ActiveRecord::StatementInvalid (Could not find table 'actors_movies'):
+  app/controllers/movies_controller.rb:38:in `delete'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (11.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (45.7ms)
+  [1m[36m (12.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (9.4ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateMovies (20170127023325)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" text, "release_date" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170127023325"]]
+  [1m[35m (11.1ms)[0m  commit transaction
+Migrating to CreateProfessionals (20170127113017)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "professionals" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "birthdate" datetime, "gender" varchar, "country" varchar, "type" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170127113017"]]
+  [1m[35m (8.9ms)[0m  commit transaction
+Migrating to AddDirectorToMovies (20170127231800)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "movies" ADD "director_id" integer
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170127231800"]]
+  [1m[35m (8.6ms)[0m  commit transaction
+Migrating to CreateActorsMovies (20170128151643)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "actors_movies" ("movie_id" integer, "actor_id" integer) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170128151643"]]
+  [1m[35m (7.3ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "professionals" ("type", "name", "gender", "birthdate", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["type", "Actor"], ["name", "Angelina Jolie"], ["gender", "female"], ["birthdate", "1975-06-04 00:00:00.000000"], ["country", "US"], ["created_at", "2017-01-28 15:18:26.827724"], ["updated_at", "2017-01-28 15:18:26.827724"]]
+  [1m[36m (9.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "professionals" ("type", "name", "gender", "birthdate", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["type", "Actor"], ["name", "Will Smith"], ["gender", "male"], ["birthdate", "1968-09-25 00:00:00.000000"], ["country", "US"], ["created_at", "2017-01-28 15:18:26.839100"], ["updated_at", "2017-01-28 15:18:26.839100"]]
+  [1m[35m (9.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "professionals" ("type", "name", "gender", "birthdate", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["type", "Actor"], ["name", "Margot Robbie"], ["gender", "female"], ["birthdate", "1990-07-02 00:00:00.000000"], ["country", "US"], ["created_at", "2017-01-28 15:18:26.850787"], ["updated_at", "2017-01-28 15:18:26.850787"]]
+  [1m[36m (6.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "professionals" ("type", "name", "gender", "birthdate", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["type", "Director"], ["name", "Quentin Tarantino"], ["gender", "male"], ["birthdate", "1963-03-27 00:00:00.000000"], ["country", "US"], ["created_at", "2017-01-28 15:18:26.867061"], ["updated_at", "2017-01-28 15:18:26.867061"]]
+  [1m[35m (7.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "professionals" ("type", "name", "gender", "birthdate", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["type", "Director"], ["name", "Mel Gibson"], ["gender", "male"], ["birthdate", "1956-01-03 00:00:00.000000"], ["country", "US"], ["created_at", "2017-01-28 15:18:26.876684"], ["updated_at", "2017-01-28 15:18:26.876684"]]
+  [1m[36m (14.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies" WHERE ("movies"."title" = 'Alladin' AND "movies"."release_date" = '1992-11-25 00:00:00.000000') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "movies" ("title", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "Alladin"], ["release_date", "1992-11-25 00:00:00.000000"], ["created_at", "2017-01-28 15:18:26.916542"], ["updated_at", "2017-01-28 15:18:26.916542"]]
+  [1m[36m (9.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mMovie Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "movies" WHERE ("movies"."title" = 'When Harry Met Sally' AND "movies"."release_date" = '1989-07-21 00:00:00.000000') LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "movies" ("title", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "When Harry Met Sally"], ["release_date", "1989-07-21 00:00:00.000000"], ["created_at", "2017-01-28 15:18:26.928234"], ["updated_at", "2017-01-28 15:18:26.928234"]]
+  [1m[36m (6.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mMovie Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "movies" WHERE ("movies"."title" = 'The Help' AND "movies"."release_date" = '2011-08-10 00:00:00.000000') LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "movies" ("title", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "The Help"], ["release_date", "2011-08-10 00:00:00.000000"], ["created_at", "2017-01-28 15:18:26.937541"], ["updated_at", "2017-01-28 15:18:26.937541"]]
+  [1m[36m (8.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mMovie Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "movies" WHERE ("movies"."title" = 'Raiders of the Lost Ark' AND "movies"."release_date" = '1981-06-12 00:00:00.000000') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "movies" ("title", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "Raiders of the Lost Ark"], ["release_date", "1981-06-12 00:00:00.000000"], ["created_at", "2017-01-28 15:18:26.948230"], ["updated_at", "2017-01-28 15:18:26.948230"]]
+  [1m[36m (8.0ms)[0m  [1mcommit transaction[0m
+
+
+Started DELETE "/movies/delet/5" for 187.84.33.245 at 2017-01-28 15:18:40 +0000
+Cannot render console from 187.84.33.245! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#delete as HTML
+  Parameters: {"authenticity_token"=>"8L2oTowkUQALpU4Aal1BY10LHiMz1IYTxtV8BE5LddR0ex3zSV4nU1ZNP7cCDPTlyOZqMe5O7ujAF83FaPf3oQ==", "id"=>"5"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", 5]]
+Completed 404 Not Found in 26ms (ActiveRecord: 0.6ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Movie with 'id'=5):
+  app/controllers/movies_controller.rb:38:in `delete'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.9ms)
+
+
+Started GET "/" for 187.84.33.245 at 2017-01-28 15:18:53 +0000
+Cannot render console from 187.84.33.245! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (0.6ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 187.84.33.245 at 2017-01-28 15:18:59 +0000
+Cannot render console from 187.84.33.245! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 241ms (Views: 240.0ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/movies/delet/2" for 187.84.33.245 at 2017-01-28 15:19:03 +0000
+Cannot render console from 187.84.33.245! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#delete as HTML
+  Parameters: {"authenticity_token"=>"T53wgGhbzDTfomUwnsCgpK59GV10+uL85rtOkZJ7glTLW0U9rSG6Z4JKFIf2kRUiO5BtT6lgigfgef9QtMcAIQ==", "id"=>"2"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "actors_movies" WHERE "actors_movies"."movie_id" = ?  [["movie_id", 2]]
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "movies" WHERE "movies"."id" = ?[0m  [["id", 2]]
+  [1m[35m (9.1ms)[0m  commit transaction
+Redirected to https://ruby-c9code.c9users.io/movies
+Completed 302 Found in 34ms (ActiveRecord: 10.3ms)
+
+
+Started GET "/movies" for 187.84.33.245 at 2017-01-28 15:19:03 +0000
+Cannot render console from 187.84.33.245! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 36ms (Views: 35.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies/new" for 187.84.33.245 at 2017-01-28 15:19:07 +0000
+Cannot render console from 187.84.33.245! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#new as HTML
+  Rendered movies/_form.html.erb (28.8ms)
+  Rendered movies/new.html.erb within layouts/application (179.8ms)
+Completed 200 OK in 204ms (Views: 203.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies" for 187.84.33.245 at 2017-01-28 15:19:12 +0000
+Cannot render console from 187.84.33.245! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/1pH0Ylj/H3gsHh+a/eCVpJb3tGzY/lDupoOWgS3exV7nPJsTBmKLr1YCckDpjfQB7aqw275kbi8WL+bIgv5YA==", "movie"=>{"title"=>"", "release_date(3i)"=>"28", "release_date(2i)"=>"1", "release_date(1i)"=>"2017", "description"=>"s"}, "commit"=>"Create Movie"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mMovie Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "movies" WHERE ("movies"."title" = '' AND "movies"."release_date" = '2017-01-28 00:00:00.000000') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered movies/_form.html.erb (5.1ms)
+  Rendered movies/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 82ms (Views: 69.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/movies" for 187.84.33.245 at 2017-01-28 15:20:00 +0000
+Cannot render console from 187.84.33.245! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 15ms (Views: 14.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies/1/edit" for 187.84.33.245 at 2017-01-28 15:20:05 +0000
+Cannot render console from 187.84.33.245! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered movies/_form.html.erb (5.8ms)
+  Rendered movies/edit.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 215ms (Views: 211.0ms | ActiveRecord: 0.2ms)
+
+
+Started PUT "/movies/1" for 187.84.33.245 at 2017-01-28 15:20:08 +0000
+Cannot render console from 187.84.33.245! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WJnGVbSNifXCk2bSDc/a1OTKAFKcfCoLM7zgZaNAyoPcX3Pocff/pp97F2Vlnm9ScSd0QEHmQvA1flGkhfxI9g==", "movie"=>{"title"=>"Alladin", "release_date(3i)"=>"25", "release_date(2i)"=>"11", "release_date(1i)"=>"1992", "description"=>"jh"}, "commit"=>"Update Movie", "id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies" WHERE ("movies"."title" = 'Alladin' AND "movies"."id" != 1 AND "movies"."release_date" = '1992-11-25 00:00:00.000000') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "movies" SET "description" = ?, "updated_at" = ? WHERE "movies"."id" = ?  [["description", "jh"], ["updated_at", "2017-01-28 15:20:08.861293"], ["id", 1]]
+  [1m[36m (8.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies" WHERE ("movies"."title" = 'Alladin' AND "movies"."id" != 1 AND "movies"."release_date" = '1992-11-25 00:00:00.000000') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to https://ruby-c9code.c9users.io/movies/1
+Completed 302 Found in 22ms (ActiveRecord: 9.5ms)
+
+
+Started GET "/movies/1" for 187.84.33.245 at 2017-01-28 15:20:09 +0000
+Cannot render console from 187.84.33.245! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered movies/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 24ms (Views: 23.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies" for 187.84.33.245 at 2017-01-28 15:20:12 +0000
+Cannot render console from 187.84.33.245! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 101ms (Views: 99.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies" for 187.84.33.245 at 2017-01-28 15:20:14 +0000
+Cannot render console from 187.84.33.245! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies" for 187.84.33.245 at 2017-01-28 15:20:16 +0000
+Cannot render console from 187.84.33.245! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies/new" for 187.84.33.245 at 2017-01-28 15:20:19 +0000
+Cannot render console from 187.84.33.245! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#new as HTML
+  Rendered movies/_form.html.erb (5.2ms)
+  Rendered movies/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 36ms (Views: 35.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies" for 187.84.33.245 at 2017-01-28 15:20:23 +0000
+Cannot render console from 187.84.33.245! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"e5K3ft0s68AEy8X1BeC1vkuP4Ha+UKxe9fgFbyTUoYH/VALDGFadk1kjtEJtsQA43mKUZGPKxKXzOrSuAmgj9A==", "movie"=>{"title"=>"A", "release_date(3i)"=>"28", "release_date(2i)"=>"1", "release_date(1i)"=>"2017", "description"=>"fsd"}, "commit"=>"Create Movie"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mMovie Exists (0.2ms)[0m  SELECT  1 AS one FROM "movies" WHERE ("movies"."title" = 'A' AND "movies"."release_date" = '2017-01-28 00:00:00.000000') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "movies" ("title", "description", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "A"], ["description", "fsd"], ["release_date", "2017-01-28 00:00:00.000000"], ["created_at", "2017-01-28 15:20:23.184661"], ["updated_at", "2017-01-28 15:20:23.184661"]]
+  [1m[35m (8.0ms)[0m  commit transaction
+Redirected to https://ruby-c9code.c9users.io/movies/5
+Completed 302 Found in 12ms (ActiveRecord: 8.5ms)
+
+
+Started GET "/movies/5" for 187.84.33.245 at 2017-01-28 15:20:23 +0000
+Cannot render console from 187.84.33.245! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered movies/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 187.84.33.245 at 2017-01-28 15:20:31 +0000
+Cannot render console from 187.84.33.245! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 187.84.33.245 at 2017-01-28 15:20:35 +0000
+Cannot render console from 187.84.33.245! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/movies/new" for 187.84.33.245 at 2017-01-28 15:20:37 +0000
+Cannot render console from 187.84.33.245! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#new as HTML
+  Rendered movies/_form.html.erb (4.1ms)
+  Rendered movies/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies" for 187.84.33.245 at 2017-01-28 15:20:41 +0000
+Cannot render console from 187.84.33.245! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1h6O4a5yqDV2hToJQFmIicQWD0pabi+ma+Dd19JDgspS2DtcawjeZittS74oCD0PUft7WIf0R11tImwW9P8Avw==", "movie"=>{"title"=>"A", "release_date(3i)"=>"28", "release_date(2i)"=>"1", "release_date(1i)"=>"2017", "description"=>""}, "commit"=>"Create Movie"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mMovie Exists (0.2ms)[0m  SELECT  1 AS one FROM "movies" WHERE ("movies"."title" = 'A' AND "movies"."release_date" = '2017-01-28 00:00:00.000000') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered movies/_form.html.erb (4.8ms)
+  Rendered movies/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 26ms (Views: 21.6ms | ActiveRecord: 0.4ms)
