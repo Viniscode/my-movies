@@ -5494,3 +5494,856 @@ Processing by MoviesController#create as HTML
   Rendered movies/_form.html.erb (4.8ms)
   Rendered movies/new.html.erb within layouts/application (5.7ms)
 Completed 200 OK in 26ms (Views: 21.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 143.107.45.213 at 2017-01-30 21:09:34 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 362ms (Views: 330.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-c9d1e2da5848020664ac30d3a2dbcaf4d9d2bb3439a4a6a7c8b7c11826031e52.css?body=1" for 143.107.45.213 at 2017-01-30 21:09:35 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/movie.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 21:09:36 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/actors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 21:09:36 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/directors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 21:09:36 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 143.107.45.213 at 2017-01-30 21:09:36 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 143.107.45.213 at 2017-01-30 21:09:36 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 143.107.45.213 at 2017-01-30 21:09:36 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/movies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 21:09:36 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/peoples.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 21:09:36 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 143.107.45.213 at 2017-01-30 21:09:36 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 143.107.45.213 at 2017-01-30 21:19:55 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 45ms (Views: 44.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-c9d1e2da5848020664ac30d3a2dbcaf4d9d2bb3439a4a6a7c8b7c11826031e52.css?body=1" for 143.107.45.213 at 2017-01-30 21:19:56 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/movie.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 21:19:56 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 143.107.45.213 at 2017-01-30 21:19:56 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/directors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 21:19:56 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 143.107.45.213 at 2017-01-30 21:19:56 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/actors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 21:19:56 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 143.107.45.213 at 2017-01-30 21:19:56 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/movies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 21:19:56 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/peoples.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 21:19:56 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 143.107.45.213 at 2017-01-30 21:19:56 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 143.107.45.213 at 2017-01-30 21:22:59 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.2ms)
+
+SyntaxError (/home/ubuntu/workspace/my-movies/app/views/layouts/application.html.erb:23: syntax error, unexpected '<', expecting keyword_end
+<!DOCTYPE html>
+ ^
+/home/ubuntu/workspace/my-movies/app/views/layouts/application.html.erb:24: syntax error, unexpected '<'
+<html>
+ ^
+/home/ubuntu/workspace/my-movies/app/views/layouts/application.html.erb:31: unknown regexp options - had
+/home/ubuntu/workspace/my-movies/app/views/layouts/application.html.erb:33: syntax error, unexpected '<'
+  <body>
+   ^
+/home/ubuntu/workspace/my-movies/app/views/layouts/application.html.erb:35: syntax error, unexpected '<'
+      <ul class="menu">
+       ^
+/home/ubuntu/workspace/my-movies/app/views/layouts/application.html.erb:36: syntax error, unexpected '<'
+        <li>
+         ^
+/home/ubuntu/workspace/my-movies/app/views/layouts/application.html.erb:39: syntax error, unexpected '<', expecting keyword_end
+          </h1>
+           ^
+/home/ubuntu/workspace/my-movies/app/views/layouts/application.html.erb:40: unknown regexp option - l
+/home/ubuntu/workspace/my-movies/app/views/layouts/application.html.erb:41: syntax error, unexpected '<'
+        <li class="menu-item">'.freeze...
+         ^
+/home/ubuntu/workspace/my-movies/app/views/layouts/application.html.erb:42: unknown regexp options - actr
+end pattern with unmatched parenthesis: /li>
+        <li class="menu-item">'.freeze;@output_buffer.append=( link_to("Actors", "/
+/home/ubuntu/workspace/my-movies/app/views/layouts/application.html.erb:42: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+...d=( link_to("Actors", "/actors") );@output_buffer.safe_appen...
+...                               ^
+/home/ubuntu/workspace/my-movies/app/views/layouts/application.html.erb:43: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+        <li class="menu-item">'.freeze;@output_buffe...
+                       ^
+/home/ubuntu/workspace/my-movies/app/views/layouts/application.html.erb:43: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+        <li class="menu-item">'.freeze;@output_buffer.appe...
+                             ^
+/home/ubuntu/workspace/my-movies/app/views/layouts/application.html.erb:43: syntax error, unexpected tCONSTANT, expecting keyword_end
+...fer.append=( link_to("Directors", "/directors") );@output_bu...
+...                               ^
+/home/ubuntu/workspace/my-movies/app/views/layouts/application.html.erb:43: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...nk_to("Directors", "/directors") );@output_buffer.safe_appen...
+...                               ^
+/home/ubuntu/workspace/my-movies/app/views/layouts/application.html.erb:47: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+    <div class="main">
+                    ^
+/home/ubuntu/workspace/my-movies/app/views/layouts/application.html.erb:49: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...nt_tag :div, msg, class: "alert alert-info" );@output_buffer...
+...                               ^
+/home/ubuntu/workspace/my-movies/app/views/layouts/application.html.erb:49: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+... msg, class: "alert alert-info" );@output_buffer.safe_append...
+...                               ^
+/home/ubuntu/workspace/my-movies/app/views/layouts/application.html.erb:49: unterminated string meets end of file):
+  app/views/layouts/application.html.erb:23: syntax error, unexpected '<', expecting keyword_end
+  app/views/layouts/application.html.erb:24: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:31: unknown regexp options - had
+  app/views/layouts/application.html.erb:33: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:35: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:36: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:39: syntax error, unexpected '<', expecting keyword_end
+  app/views/layouts/application.html.erb:40: unknown regexp option - l
+  app/views/layouts/application.html.erb:41: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:42: unknown regexp options - actr
+  app/views/layouts/application.html.erb:42: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+  app/views/layouts/application.html.erb:43: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  app/views/layouts/application.html.erb:43: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  app/views/layouts/application.html.erb:43: syntax error, unexpected tCONSTANT, expecting keyword_end
+  app/views/layouts/application.html.erb:43: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  app/views/layouts/application.html.erb:47: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  app/views/layouts/application.html.erb:49: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  app/views/layouts/application.html.erb:49: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  app/views/layouts/application.html.erb:49: unterminated string meets end of file
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (40.2ms)
+
+
+Started GET "/" for 143.107.45.213 at 2017-01-30 21:23:31 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-c9d1e2da5848020664ac30d3a2dbcaf4d9d2bb3439a4a6a7c8b7c11826031e52.css?body=1" for 143.107.45.213 at 2017-01-30 21:23:31 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 143.107.45.213 at 2017-01-30 21:23:31 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/movie.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 21:23:32 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/directors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 21:23:32 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 143.107.45.213 at 2017-01-30 21:23:32 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/actors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 21:23:32 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 143.107.45.213 at 2017-01-30 21:23:32 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/movies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 21:23:32 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/peoples.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 21:23:32 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 143.107.45.213 at 2017-01-30 21:23:32 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/movies" for 143.107.45.213 at 2017-01-30 21:23:59 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies" for 143.107.45.213 at 2017-01-30 21:24:01 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies" for 143.107.45.213 at 2017-01-30 21:24:01 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies" for 143.107.45.213 at 2017-01-30 21:24:02 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/actors" for 143.107.45.213 at 2017-01-30 21:24:04 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ActorsController#index as HTML
+  [1m[35mActor Load (0.2ms)[0m  SELECT "professionals".* FROM "professionals" WHERE "professionals"."type" IN ('Actor')
+  Rendered actors/index.html.erb within layouts/application (14.3ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (undefined method `coutry' for #<Actor:0x007f3cae314768>
+Did you mean?  country
+               country?
+               country=):
+    20:         <td><%= actor.name %></td>
+    21:         <td><%= actor.birthdate %></td>
+    22:         <td><%= actor.gender %></td>
+    23:         <td><%= actor.coutry %></td>
+    24:         <td><%= actor.type %></td>
+    25:         <td><%= link_to 'Show', actor %></td>
+    26:         <td><%= link_to 'Edit', edit_actor_path(actor) %></td>
+  app/views/actors/index.html.erb:23:in `block in _app_views_actors_index_html_erb__394943045054776403_69949294814360'
+  app/views/actors/index.html.erb:18:in `_app_views_actors_index_html_erb__394943045054776403_69949294814360'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (27.0ms)
+
+
+Started GET "/movies" for 143.107.45.213 at 2017-01-30 21:24:13 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-c9d1e2da5848020664ac30d3a2dbcaf4d9d2bb3439a4a6a7c8b7c11826031e52.css?body=1" for 143.107.45.213 at 2017-01-30 21:24:13 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/movie.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 21:24:13 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 143.107.45.213 at 2017-01-30 21:24:13 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 143.107.45.213 at 2017-01-30 21:24:13 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/directors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 21:24:13 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/actors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 21:24:13 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 143.107.45.213 at 2017-01-30 21:24:13 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/movies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 21:24:13 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 143.107.45.213 at 2017-01-30 21:24:13 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/peoples.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 21:24:13 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/directors" for 143.107.45.213 at 2017-01-30 21:24:15 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DirectorsController#index as HTML
+  [1m[35mDirector Load (0.2ms)[0m  SELECT "professionals".* FROM "professionals" WHERE "professionals"."type" IN ('Director')
+  Rendered directors/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 26ms (Views: 22.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies" for 143.107.45.213 at 2017-01-30 21:25:57 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 176ms (Views: 175.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/actors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 143.107.45.213 at 2017-01-30 21:25:57 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/directors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 143.107.45.213 at 2017-01-30 21:25:57 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-25fe720eb68f3bca6b07f38308d164aba3894c921a35e886ed8cbc8145459848.css?body=1" for 143.107.45.213 at 2017-01-30 21:25:57 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 143.107.45.213 at 2017-01-30 21:25:57 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/peoples.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 143.107.45.213 at 2017-01-30 21:25:58 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/movie.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 143.107.45.213 at 2017-01-30 21:25:58 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-ab14bc95f6ed051098061b5929ccdd8e7c71de1d1d106ae7b1c2c6b55c594635.css?body=1" for 143.107.45.213 at 2017-01-30 21:25:58 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/movies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 143.107.45.213 at 2017-01-30 21:25:58 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 143.107.45.213 at 2017-01-30 21:25:58 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/actors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 21:25:58 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 143.107.45.213 at 2017-01-30 21:25:58 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/directors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 21:25:58 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/movie.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 21:25:58 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/movies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 21:25:58 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/peoples.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 21:25:58 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 143.107.45.213 at 2017-01-30 21:25:58 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/movies" for 143.107.45.213 at 2017-01-30 21:26:14 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 24ms (Views: 22.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies" for 143.107.45.213 at 2017-01-30 21:26:16 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.2ms)
+  [1m[36m (12.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (7.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateMovies (20170127023325)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" text, "release_date" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170127023325"]]
+  [1m[35m (13.0ms)[0m  commit transaction
+Migrating to CreateProfessionals (20170127113017)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "professionals" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "birthdate" datetime, "gender" varchar, "country" varchar, "type" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170127113017"]]
+  [1m[35m (8.1ms)[0m  commit transaction
+Migrating to AddDirectorToMovies (20170127231800)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "movies" ADD "director_id" integer
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170127231800"]]
+  [1m[35m (7.0ms)[0m  commit transaction
+Migrating to CreateActorsMovies (20170128151643)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "actors_movies" ("movie_id" integer, "actor_id" integer) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170128151643"]]
+  [1m[35m (9.4ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "professionals" ("type", "name", "gender", "birthdate", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["type", "Actor"], ["name", "Angelina Jolie"], ["gender", "female"], ["birthdate", "1975-06-04 00:00:00.000000"], ["country", "US"], ["created_at", "2017-01-30 21:28:21.950763"], ["updated_at", "2017-01-30 21:28:21.950763"]]
+  [1m[36m (7.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "professionals" ("type", "name", "gender", "birthdate", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["type", "Actor"], ["name", "Will Smith"], ["gender", "male"], ["birthdate", "1968-09-25 00:00:00.000000"], ["country", "US"], ["created_at", "2017-01-30 21:28:21.960914"], ["updated_at", "2017-01-30 21:28:21.960914"]]
+  [1m[35m (8.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "professionals" ("type", "name", "gender", "birthdate", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["type", "Actor"], ["name", "Margot Robbie"], ["gender", "female"], ["birthdate", "1990-07-02 00:00:00.000000"], ["country", "US"], ["created_at", "2017-01-30 21:28:21.971804"], ["updated_at", "2017-01-30 21:28:21.971804"]]
+  [1m[36m (6.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "professionals" ("type", "name", "gender", "birthdate", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["type", "Director"], ["name", "Quentin Tarantino"], ["gender", "male"], ["birthdate", "1963-03-27 00:00:00.000000"], ["country", "US"], ["created_at", "2017-01-30 21:28:21.988459"], ["updated_at", "2017-01-30 21:28:21.988459"]]
+  [1m[35m (11.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "professionals" ("type", "name", "gender", "birthdate", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["type", "Director"], ["name", "Mel Gibson"], ["gender", "male"], ["birthdate", "1956-01-03 00:00:00.000000"], ["country", "US"], ["created_at", "2017-01-30 21:28:22.002634"], ["updated_at", "2017-01-30 21:28:22.002634"]]
+  [1m[36m (8.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies" WHERE ("movies"."title" = 'Alladin' AND "movies"."release_date" = '1992-11-25 00:00:00.000000') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "movies" ("title", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "Alladin"], ["release_date", "1992-11-25 00:00:00.000000"], ["created_at", "2017-01-30 21:28:22.038571"], ["updated_at", "2017-01-30 21:28:22.038571"]]
+  [1m[36m (7.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mMovie Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "movies" WHERE ("movies"."title" = 'When Harry Met Sally' AND "movies"."release_date" = '1989-07-21 00:00:00.000000') LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "movies" ("title", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "When Harry Met Sally"], ["release_date", "1989-07-21 00:00:00.000000"], ["created_at", "2017-01-30 21:28:22.049486"], ["updated_at", "2017-01-30 21:28:22.049486"]]
+  [1m[36m (7.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mMovie Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "movies" WHERE ("movies"."title" = 'The Help' AND "movies"."release_date" = '2011-08-10 00:00:00.000000') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "movies" ("title", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "The Help"], ["release_date", "2011-08-10 00:00:00.000000"], ["created_at", "2017-01-30 21:28:22.060031"], ["updated_at", "2017-01-30 21:28:22.060031"]]
+  [1m[36m (6.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mMovie Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "movies" WHERE ("movies"."title" = 'Raiders of the Lost Ark' AND "movies"."release_date" = '1981-06-12 00:00:00.000000') LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "movies" ("title", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "Raiders of the Lost Ark"], ["release_date", "1981-06-12 00:00:00.000000"], ["created_at", "2017-01-30 21:28:22.069142"], ["updated_at", "2017-01-30 21:28:22.069142"]]
+  [1m[36m (8.2ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for 143.107.45.213 at 2017-01-30 21:28:31 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 405ms (Views: 386.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/actors" for 143.107.45.213 at 2017-01-30 21:28:34 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ActorsController#index as HTML
+  [1m[36mActor Load (0.3ms)[0m  [1mSELECT "professionals".* FROM "professionals" WHERE "professionals"."type" IN ('Actor')[0m
+  Rendered actors/index.html.erb within layouts/application (23.5ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (undefined method `coutry' for #<Actor:0x007f559d57e2d0>
+Did you mean?  country
+               country?
+               country=):
+    20:         <td><%= actor.name %></td>
+    21:         <td><%= actor.birthdate %></td>
+    22:         <td><%= actor.gender %></td>
+    23:         <td><%= actor.coutry %></td>
+    24:         <td><%= actor.type %></td>
+    25:         <td><%= link_to 'Show', actor %></td>
+    26:         <td><%= link_to 'Edit', edit_actor_path(actor) %></td>
+  app/views/actors/index.html.erb:23:in `block in _app_views_actors_index_html_erb___477855020020395316_70002847523740'
+  app/views/actors/index.html.erb:18:in `_app_views_actors_index_html_erb___477855020020395316_70002847523740'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (29.1ms)
+
+
+Started GET "/actors" for 143.107.45.213 at 2017-01-30 21:29:42 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ActorsController#index as HTML
+  [1m[35mActor Load (0.3ms)[0m  SELECT "professionals".* FROM "professionals" WHERE "professionals"."type" IN ('Actor')
+  Rendered actors/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/actors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 143.107.45.213 at 2017-01-30 21:29:42 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/directors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 143.107.45.213 at 2017-01-30 21:29:42 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-ab14bc95f6ed051098061b5929ccdd8e7c71de1d1d106ae7b1c2c6b55c594635.css?body=1" for 143.107.45.213 at 2017-01-30 21:29:42 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/movies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 143.107.45.213 at 2017-01-30 21:29:42 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-25fe720eb68f3bca6b07f38308d164aba3894c921a35e886ed8cbc8145459848.css?body=1" for 143.107.45.213 at 2017-01-30 21:29:42 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 143.107.45.213 at 2017-01-30 21:29:42 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/actors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 21:29:42 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/peoples.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 143.107.45.213 at 2017-01-30 21:29:43 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/movie.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 143.107.45.213 at 2017-01-30 21:29:43 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/directors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 21:29:43 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/movie.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 21:29:43 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 143.107.45.213 at 2017-01-30 21:29:43 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 143.107.45.213 at 2017-01-30 21:29:43 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 143.107.45.213 at 2017-01-30 21:29:43 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/movies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 21:29:43 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/peoples.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 143.107.45.213 at 2017-01-30 21:29:43 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/movies" for 143.107.45.213 at 2017-01-30 21:30:21 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 24ms (Views: 23.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/actors" for 143.107.45.213 at 2017-01-30 21:30:22 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ActorsController#index as HTML
+  [1m[35mActor Load (0.3ms)[0m  SELECT "professionals".* FROM "professionals" WHERE "professionals"."type" IN ('Actor')
+  Rendered actors/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 22ms (Views: 21.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies" for 143.107.45.213 at 2017-01-30 21:30:23 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 31ms (Views: 29.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/directors" for 143.107.45.213 at 2017-01-30 21:30:24 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DirectorsController#index as HTML
+  [1m[35mDirector Load (0.3ms)[0m  SELECT "professionals".* FROM "professionals" WHERE "professionals"."type" IN ('Director')
+  Rendered directors/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 41ms (Views: 37.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/directors" for 143.107.45.213 at 2017-01-30 21:30:25 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DirectorsController#index as HTML
+  [1m[36mDirector Load (0.3ms)[0m  [1mSELECT "professionals".* FROM "professionals" WHERE "professionals"."type" IN ('Director')[0m
+  Rendered directors/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 35ms (Views: 33.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/actors" for 143.107.45.213 at 2017-01-30 21:30:26 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ActorsController#index as HTML
+  [1m[35mActor Load (0.3ms)[0m  SELECT "professionals".* FROM "professionals" WHERE "professionals"."type" IN ('Actor')
+  Rendered actors/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 25ms (Views: 23.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies" for 143.107.45.213 at 2017-01-30 21:30:27 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 27ms (Views: 26.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/actors" for 143.107.45.213 at 2017-01-30 21:30:28 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ActorsController#index as HTML
+  [1m[35mActor Load (0.3ms)[0m  SELECT "professionals".* FROM "professionals" WHERE "professionals"."type" IN ('Actor')
+  Rendered actors/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 177ms (Views: 176.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/actors" for 143.107.45.213 at 2017-01-30 21:30:29 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ActorsController#index as HTML
+  [1m[36mActor Load (0.2ms)[0m  [1mSELECT "professionals".* FROM "professionals" WHERE "professionals"."type" IN ('Actor')[0m
+  Rendered actors/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 24ms (Views: 22.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies" for 143.107.45.213 at 2017-01-30 21:30:30 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 24ms (Views: 23.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/directors" for 143.107.45.213 at 2017-01-30 21:30:30 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DirectorsController#index as HTML
+  [1m[36mDirector Load (0.3ms)[0m  [1mSELECT "professionals".* FROM "professionals" WHERE "professionals"."type" IN ('Director')[0m
+  Rendered directors/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 48ms (Views: 46.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/actors" for 143.107.45.213 at 2017-01-30 21:30:35 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ActorsController#index as HTML
+  [1m[35mActor Load (0.3ms)[0m  SELECT "professionals".* FROM "professionals" WHERE "professionals"."type" IN ('Actor')
+  Rendered actors/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 24ms (Views: 23.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies" for 143.107.45.213 at 2017-01-30 21:30:35 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 31ms (Views: 29.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/actors" for 143.107.45.213 at 2017-01-30 21:30:41 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ActorsController#index as HTML
+  [1m[35mActor Load (0.2ms)[0m  SELECT "professionals".* FROM "professionals" WHERE "professionals"."type" IN ('Actor')
+  Rendered actors/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 24ms (Views: 22.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/directors" for 143.107.45.213 at 2017-01-30 21:30:42 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DirectorsController#index as HTML
+  [1m[36mDirector Load (0.3ms)[0m  [1mSELECT "professionals".* FROM "professionals" WHERE "professionals"."type" IN ('Director')[0m
+  Rendered directors/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 24ms (Views: 22.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 143.107.45.213 at 2017-01-30 21:30:43 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies" for 143.107.45.213 at 2017-01-30 21:30:44 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 22ms (Views: 21.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/actors" for 143.107.45.213 at 2017-01-30 21:30:45 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ActorsController#index as HTML
+  [1m[35mActor Load (0.2ms)[0m  SELECT "professionals".* FROM "professionals" WHERE "professionals"."type" IN ('Actor')
+  Rendered actors/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/directors" for 143.107.45.213 at 2017-01-30 21:30:46 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DirectorsController#index as HTML
+  [1m[36mDirector Load (0.3ms)[0m  [1mSELECT "professionals".* FROM "professionals" WHERE "professionals"."type" IN ('Director')[0m
+  Rendered directors/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/actors" for 143.107.45.213 at 2017-01-30 21:30:47 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ActorsController#index as HTML
+  [1m[35mActor Load (0.2ms)[0m  SELECT "professionals".* FROM "professionals" WHERE "professionals"."type" IN ('Actor')
+  Rendered actors/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 27ms (Views: 25.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies" for 143.107.45.213 at 2017-01-30 21:30:48 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 23ms (Views: 22.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/actors" for 143.107.45.213 at 2017-01-30 21:30:49 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ActorsController#index as HTML
+  [1m[35mActor Load (0.2ms)[0m  SELECT "professionals".* FROM "professionals" WHERE "professionals"."type" IN ('Actor')
+  Rendered actors/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/directors" for 143.107.45.213 at 2017-01-30 21:30:49 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DirectorsController#index as HTML
+  [1m[36mDirector Load (0.2ms)[0m  [1mSELECT "professionals".* FROM "professionals" WHERE "professionals"."type" IN ('Director')[0m
+  Rendered directors/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies" for 143.107.45.213 at 2017-01-30 21:30:51 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 23ms (Views: 21.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/actors" for 143.107.45.213 at 2017-01-30 21:30:51 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ActorsController#index as HTML
+  [1m[36mActor Load (0.2ms)[0m  [1mSELECT "professionals".* FROM "professionals" WHERE "professionals"."type" IN ('Actor')[0m
+  Rendered actors/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 25ms (Views: 23.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/directors" for 143.107.45.213 at 2017-01-30 21:30:52 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DirectorsController#index as HTML
+  [1m[35mDirector Load (0.3ms)[0m  SELECT "professionals".* FROM "professionals" WHERE "professionals"."type" IN ('Director')
+  Rendered directors/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies" for 143.107.45.213 at 2017-01-30 21:30:56 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 20ms (Views: 19.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies/new" for 143.107.45.213 at 2017-01-30 21:33:01 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#new as HTML
+  Rendered movies/_form.html.erb (42.7ms)
+  Rendered movies/new.html.erb within layouts/application (48.2ms)
+Completed 200 OK in 94ms (Views: 92.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies" for 143.107.45.213 at 2017-01-30 21:34:13 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3GkkmhG6A9KhKtXqMitCc52UCJzmQQzTlZItAtaaApta0G/gt9viaU3WlKv6f4NDHP5JQtMhMSWLcGOPapaazQ==", "movie"=>{"title"=>"As aventuras do Gás Hélio", "release_date(3i)"=>"30", "release_date(2i)"=>"1", "release_date(1i)"=>"2017", "description"=>"A trajetória de um morador do rochdale"}, "commit"=>"Create Movie"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies" WHERE ("movies"."title" = 'As aventuras do Gás Hélio' AND "movies"."release_date" = '2017-01-30 00:00:00.000000') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "movies" ("title", "description", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "As aventuras do Gás Hélio"], ["description", "A trajetória de um morador do rochdale"], ["release_date", "2017-01-30 00:00:00.000000"], ["created_at", "2017-01-30 21:34:13.611693"], ["updated_at", "2017-01-30 21:34:13.611693"]]
+  [1m[36m (8.9ms)[0m  [1mcommit transaction[0m
+Redirected to https://ruby-c9code.c9users.io/movies/5
+Completed 302 Found in 35ms (ActiveRecord: 9.7ms)
+
+
+Started GET "/movies/5" for 143.107.45.213 at 2017-01-30 21:34:13 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mMovie Load (0.3ms)[0m  SELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered movies/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 36ms (Views: 24.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 143.107.45.213 at 2017-01-30 21:34:15 +0000
+Cannot render console from 143.107.45.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 27ms (Views: 25.8ms | ActiveRecord: 0.2ms)

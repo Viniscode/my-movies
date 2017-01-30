@@ -18,7 +18,7 @@ class ActorsControllerTest < ActionController::TestCase
 
   test "should create actor" do
     assert_difference('Actor.count') do
-      post :create, actor: { birthdate: @actor.birthdate, coutry: @actor.coutry, gender: @actor.gender, name: @actor.name, type: @actor.type }
+      post :create, actor: { birthdate: @actor.birthdate, country: @actor.country, gender: @actor.gender, name: @actor.name, type: @actor.type }
     end
 
     assert_redirected_to actor_path(assigns(:actor))
@@ -35,7 +35,7 @@ class ActorsControllerTest < ActionController::TestCase
   end
 
   test "should update actor" do
-    patch :update, id: @actor, actor: { birthdate: @actor.birthdate, coutry: @actor.coutry, gender: @actor.gender, name: @actor.name, type: @actor.type }
+    patch :update, id: @actor, actor: { birthdate: @actor.birthdate, country: @actor.country, gender: @actor.gender, name: @actor.name, type: @actor.type }
     assert_redirected_to actor_path(assigns(:actor))
   end
 
